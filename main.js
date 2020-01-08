@@ -17,3 +17,5 @@ function scrollFunction() {
         $('#header').addClass('no-shadow');
     }
 }
+window.Prism = window.Prism || {};
+window.Prism.manual = true;

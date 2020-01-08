@@ -2,13 +2,25 @@
     --primary:#1a237e;
     --primary-light:#534bae;
     --primary-dark:#000051;
-    --secondary:#ffcc00;
 }
 html,body {
     font-family: "Roboto",sans-serif;
 }
 a {
     color: var(--primary-light);
+}
+body, button, input, select, textarea {
+    font-family: "Roboto",sans-serif;
+}
+.input, .textarea {
+    box-shadow: none;
+}
+.input, .select select {
+    border-radius: 4px;
+    padding-left: calc(0.8em - 1px);
+}
+.input:focus, .textarea:focus, .select select:focus, .is-focused.input, .is-focused.textarea, .select select.is-focused, .input:active, .textarea:active, .select select:active, .is-active.input, .is-active.textarea, .select select.is-active {
+    box-shadow: inset 0 0 0 1px var(--primary);
 }
 .container a:not(.button):hover {
     color: var(--primary);
@@ -64,6 +76,10 @@ a {
 }
 .button.is-outline:hover::before {
     transform: scale(10);
+}
+.button.is-line {
+    border: 1px solid #dbdbdb;
+    box-shadow: none;
 }
 .button.is-flat {
     background: transparent;
@@ -125,14 +141,19 @@ a {
     top: 0;
 }
 .navbar.header {
-    background: var(--primary-dark);
-    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+    background: white;
     min-height: 64px;
     font-family: "Google Sans",sans-serif;
+}
+.navbar.header .navbar-brand .navbar-item {
+    color: var(--primary-dark);
 }
 .navbar.header.no-shadow {
     background: transparent;
     box-shadow: none!important;
+}
+.navbar.header.no-shadow .navbar-brand .navbar-item {
+    color: white;
 }
 .navbar.header ~ .hero,.navbar.header ~ .section {
     padding-top: 7rem;
@@ -149,24 +170,25 @@ a {
         padding: 0 24px;
     }
     .navbar.header .navbar-item:hover, .navbar.header .navbar-item.has-dropdown:hover .navbar-link {
-        color: var(--secondary);
+        color: var(--primary-light);
         background: transparent;
     }
     .navbar.header .navbar-item.is-active {
         position: relative;
-        color: var(--secondary);
+        color: var(--primary);
     }
     .navbar.header .navbar-item.is-active::after {
         content: "";
         height: 4px;
-        background: var(--secondary);
+        background: var(--primary);
         width: 100%;
         position: absolute;
-        bottom: 0;
+        border-radius: 0 0 12px 12px;
+        top: 0;
         left: 0;
     }
     .navbar.header.no-shadow .navbar-item.is-active::after {
-        top: 0;
+        background: white;
         bottom: initial;
     }
     .navbar.header .navbar-item.has-dropdown .navbar-link {
@@ -174,8 +196,11 @@ a {
         padding: 0.5rem 0.75rem;
     }
     .navbar.header .navbar-item,.navbar.header .navbar-item.has-dropdown .navbar-link {
-        color: white;
+        color: var(--primary-dark);
         margin: 0 10px;
+    }
+    .navbar.header.no-shadow .navbar-item,.navbar.header.no-shadow .navbar-item.has-dropdown .navbar-link {
+        color: white;
     }
     .navbar-dropdown {
         -webkit-transition: opacity .03s linear,-webkit-transform .12s cubic-bezier(0,0,.2,1);
@@ -198,6 +223,9 @@ a {
     }
 }
 @media screen and (max-width: 1023px) {
+    .navbar.header.no-shadow {
+        background: var(--primary-dark);
+    }
     .navbar-brand, .navbar-tabs {
         min-height: 64px;
     }
@@ -243,10 +271,13 @@ a {
         width: 64px;
     }
     .navbar-burger span {
-        background: #fff;
+        background: var(--primary-dark);
         height: 2px;
         width: 25px;
         left: calc(50% - 15px);
+    }
+    .navbar.header.no-shadow .navbar-burger span {
+        background: white;
     }
     .navbar-burger:not(.is-active) span:nth-child(1) {
         top: calc(50% - 9px);
@@ -303,18 +334,6 @@ a {
 .kaki a {
     font-weight: 500;
 }
-.notes .card .card-image {
-    position: relative;
-}
-.notes .card .media {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 1rem 2rem;
-    color: #fff;
-    background: rgba(0,0,0,.5);
-}
 .work .card {
     overflow: hidden;
 }
@@ -334,8 +353,16 @@ a {
     transform: translateY(0);
 }
 @media screen and (min-width: 1024px) {
-    .notes .card .card-image .media, .work .card .card-content {
+    .work .card .card-content {
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
     }
+}
+.notes:not(.read) .column a {
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.notes:not(.read) .card:hover {
+    background: rgba(0,0,0,.05);
+    border-radius: 4px;
 }
