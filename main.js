@@ -19,3 +19,8 @@ window.onscroll = function() {
 };
 window.Prism = window.Prism || {};
 window.Prism.manual = true;
+$('.js-tilt').tilt({
+    scale: 1.05,
+    glare: true,
+    maxGlare: .2
+})
