@@ -561,6 +561,9 @@ hr {
     .front-banner .desc-container {
         padding: 20px 10px;
     }
+    .front-banner .image-container .hiasan-1 {
+        display: none;
+    }
 }
 .notes:not(.read) .column a {
     display: block;
