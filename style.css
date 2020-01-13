@@ -313,6 +313,7 @@ hr {
 .front-banner .image-container .hiasan-1 {
     position: absolute;
     bottom: 10%;
+    right: 0;
     transform: rotate(-45deg) translateX(30px) translateZ(50px);
 }
 .front-banner .image-container .hiasan-2 {
