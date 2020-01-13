@@ -313,22 +313,21 @@ hr {
 .front-banner .image-container .hiasan-1 {
     position: absolute;
     bottom: 10%;
-    right: -30px;
-    transform: rotate(-45deg) translateZ(50px);
+    transform: rotate(-45deg) translateX(30px) translateZ(50px);
 }
 .front-banner .image-container .hiasan-2 {
     position: absolute;
     filter: var(--blur);
     top: -5%;
     left: 30%;
-    transform:translateZ(50px);
+    transform:translateZ(60px);
 }
 .front-banner .image-container .hiasan-3 {
     position: absolute;
     bottom: -50px;
     left: -50px;
     filter:var(--blur);
-    transform:translateZ(50px) rotate(-35deg);
+    transform:translateZ(70px);
     z-index:14;
 }
 .front-banner .image-container:hover .hiasan-3 {
@@ -421,6 +420,9 @@ hr {
     .navbar.header {
         padding: 0 24px;
     }
+    .navbar.header .navbar-item {
+        font-weight:500;
+    }
     .navbar.header .navbar-item:hover, .navbar.header .navbar-item.has-dropdown:hover .navbar-link {
         color: var(--primary-light);
         background: transparent;
@@ -471,6 +473,12 @@ hr {
     }
     .kaki .action .button:first-child {
         padding-left: 0;
+    }
+    .navbar-menu:hover .navbar-item {
+        filter:blur(3px);
+    }
+    .navbar-menu:hover .navbar-item.is-active,.navbar-menu:hover .navbar-item:hover,.navbar-menu:hover .navbar-item.is-active:hover {
+        filter:none;
     }
 }
 @media screen and (max-width: 1023px) {
@@ -557,9 +565,18 @@ hr {
     display: block;
     border-bottom: 1px solid rgba(0,0,0,.05);
 }
-.notes:not(.read) .card:hover {
-    background: rgba(0,0,0,.05);
-    border-radius: 4px;
+.notes:not(.read) .card .media-content {
+    transform:translateX(-50px);
+    transition:transform .15s ease-in-out;
+}
+.notes:not(.read) .card:hover .media-content {
+    transform:translateX(0);
+}
+.notes:not(.read) .card .media-left {
+    filter:var(--blur);
+}
+.notes:not(.read) .card:hover .media-left {
+    filter:none;
 }
 .notes.read .card {
     margin-bottom: 20px;
