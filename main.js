@@ -9,12 +9,12 @@ window.onscroll = function() {
     scrollFunction();
 };
 function scrollFunction() {
-    var hei = $('.front-banner').height();
+    var hei = $('.header').height();
     if (document.body.scrollTop > hei || document.documentElement.scrollTop > hei) {
-        $('.header.no-shadow').removeClass('no-shadow');
+        $('.header').addClass('is-sticky');
     }
     else {
-        $('#header').addClass('no-shadow');
+        $('.header').removeClass('is-sticky');
     }
 }
 window.Prism = window.Prism || {};

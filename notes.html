@@ -33,17 +33,13 @@
     <div class="section notes">
         <div class="container is-small">
             <h1 class="title is-2 is-head">Notes</h1>
-            <div class="tags are-medium">
-                <a href="#" class="tag">All</a>
-                <a href="#" class="tag">Medium</a>
-                <a href="#" class="tag">Size</a>
-            </div>
             <div class="field">
                 <div class="field-body">
                     <div class="field is-expanded">
                         <div class="field has-addons">
                             <p class="control is-expanded">
-                                <input class="input" type="text" placeholder="Find something">
+                                <input class="input is-trans" type="text" placeholder="">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 30 30" fill="currentColor"><path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path></svg>Cari sesuatu</span>
                             </p>
                         </div>
                     </div>
@@ -127,6 +123,19 @@
                     </a>
                 </div>
             </div>
+            <nav class="pagination" role="navigation" aria-label="pagination">
+                <a class="pagination-previous"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M 11.28125 1.28125 L 1.28125 11.28125 L 0.59375 12 L 1.28125 12.71875 L 11.28125 22.71875 L 12.71875 21.28125 L 4.4375 13 L 24 13 L 24 11 L 4.4375 11 L 12.71875 2.71875 Z"></path></svg></a>
+                <a class="pagination-next"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M 12.71875 1.28125 L 11.28125 2.71875 L 19.5625 11 L 0 11 L 0 13 L 19.5625 13 L 11.28125 21.28125 L 12.71875 22.71875 L 22.71875 12.71875 L 23.40625 12 L 22.71875 11.28125 Z"></path></svg></a>
+                <ul class="pagination-list">
+                    <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+                    <li><span class="pagination-ellipsis">&hellip;</span></li>
+                    <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+                    <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+                    <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+                    <li><span class="pagination-ellipsis">&hellip;</span></li>
+                    <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
     <footer class="kaki has-text-centered">
