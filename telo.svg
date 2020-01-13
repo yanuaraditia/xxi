@@ -1,0 +1,23 @@
+                                <svg xmlns="http://www.w3.org/2000/svg" width="240" style="transform:rotate(-39deg)" viewBox="0 0 399 403" fill="none">
+                                    <g>
+                                        <mask id="mask0" maskUnits="userSpaceOnUse" x="0" y="0" width="399" height="403">
+                                            <line x1="1.00006" y1="5.16191e-08" x2="1.00001" y2="402.62" stroke="#ffff72" stroke-width="2"></line>
+                                            <line x1="31.4863" y1="5.16191e-08" x2="31.4863" y2="402.62" stroke="#ffff72" stroke-width="2"></line>
+                                            <line x1="61.9719" y1="5.16191e-08" x2="61.9719" y2="402.62" stroke="#ffff72" stroke-width="2"></line>
+                                            <line x1="92.4577" y1="5.16191e-08" x2="92.4576" y2="402.62" stroke="#ffff72" stroke-width="2"></line>
+                                            <line x1="122.944" y1="5.16191e-08" x2="122.944" y2="402.62" stroke="#ffff72" stroke-width="2"></line>
+                                            <line x1="153.43" y1="5.16191e-08" x2="153.43" y2="402.62" stroke="#ffff72" stroke-width="2"></line>
+                                            <line x1="183.916" y1="5.16191e-08" x2="183.916" y2="402.62" stroke="#ffff72" stroke-width="2"></line>
+                                            <line x1="214.402" y1="5.16191e-08" x2="214.402" y2="402.62" stroke="#ffff72" stroke-width="2"></line>
+                                            <line x1="244.888" y1="5.16191e-08" x2="244.887" y2="402.62" stroke="#ffff72" stroke-width="2"></line>
+                                            <line x1="275.373" y1="5.16191e-08" x2="275.373" y2="402.62" stroke="#ffff72" stroke-width="2"></line>
+                                            <line x1="305.86" y1="5.16191e-08" x2="305.86" y2="402.62" stroke="#ffff72" stroke-width="2"></line>
+                                            <line x1="336.345" y1="5.16191e-08" x2="336.345" y2="402.62" stroke="#ffff72" stroke-width="2"></line>
+                                            <line x1="366.831" y1="5.16191e-08" x2="366.831" y2="402.62" stroke="#ffff72" stroke-width="2"></line>
+                                            <line x1="397.318" y1="5.16191e-08" x2="397.317" y2="402.62" stroke="#ffff72" stroke-width="2"></line>
+                                        </mask>
+                                        <g mask="url(#mask0)">
+                                            <circle cx="198.651" cy="201.022" r="200.81" fill="#ffff72" stroke="#ffff72"></circle>
+                                        </g>
+                                    </g>
+                                </svg>

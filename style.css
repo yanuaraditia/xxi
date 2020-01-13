@@ -3,6 +3,7 @@
     --primary-light:#ffff72;
     --primary-dark:#c8b900;
     --bg-dark:#201f1f;
+    --blur:blur(3px);
 }
 html,body {
     font-family: "Roboto",sans-serif;
@@ -302,16 +303,32 @@ hr {
 }
 .front-banner .image-container {
     position: relative;
-    background: linear-gradient(to top, #202020, #333333);
+    background: url('telo.svg') no-repeat local 30% 37%, linear-gradient(to top, #202020, #333333);
     z-index: 1;
 }
 .front-banner .image-container img {
     z-index: 3;
 }
-.front-banner .image-container .hiasan {
+.front-banner .image-container .hiasan-1 {
     position: absolute;
-    bottom: -30px;
-    transform: translateX(-30px) rotate(-30deg);
+    bottom: 10%;
+    right: -30px;
+    transform: rotate(-45deg);
+}
+.front-banner .image-container .hiasan-2 {
+    position: absolute;
+    filter: var(--blur);
+    top: -5%;
+    left: 30%;
+}
+.front-banner .image-container .hiasan-3 {
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    filter:var(--blur);
+}
+.front-banner .image-container:hover .hiasan-3 {
+    filter:none;
 }
 .front-banner .desc-container {
     padding: 40px 0px 0px 40px;
@@ -377,10 +394,10 @@ hr {
     float: right;
     margin-top: 5px;
 }
-.work .title {
+.section .title {
     z-index: 2;
 }
-.work .title span {
+.section .title span {
     position: absolute;
     z-index: 1;
     left: -100px;
