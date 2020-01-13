@@ -30,11 +30,18 @@ a {
 strong {
     color: white;
 }
+.has-no-events {
+    pointer-events: none;
+}
 .has-text-primary {
     color: var(--primary)!important;
 }
 body, button, input, select, textarea {
     font-family: "Roboto",sans-serif;
+}
+hr {
+    background: rgba(255,255,255,.05);
+    height: 1px;
 }
 .input, .textarea {
     box-shadow: none;
@@ -156,7 +163,7 @@ body, button, input, select, textarea {
 }
 .title.is-head {
     max-width: 300px;
-    margin-bottom: 2rem;
+    margin: 3rem 0;
 }
 .subtitle {
     color: inherit;
@@ -342,28 +349,48 @@ body, button, input, select, textarea {
     color: var(--primary);
 }
 .kaki {
-    margin-bottom: 1rem;
+    background: #171717;
 }
 .kaki a {
     font-weight: 500;
 }
 .work .card {
     overflow: hidden;
+    z-index: 3;
 }
 .work .card .card-content {
     transform: translateY(100%);
     color: #fff;
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.8);
     position: absolute;
-    top: 0;
     left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    padding: 5rem 3rem;
+    padding: 1rem 1.25rem;
     transition: transform .2s ease-in-out;
 }
 .work .card:hover .card-content {
     transform: translateY(0);
+}
+.work .card .card-content .title span {
+    font-size: initial;
+    float: right;
+    margin-top: 5px;
+}
+.work .title {
+    z-index: 2;
+}
+.work .title span {
+    position: absolute;
+    z-index: 1;
+    left: -100px;
+    top: -40px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-transform: uppercase;
+    font-size: 7rem;
+    opacity: .1;
 }
 @media screen and (min-width: 1024px) {
     .work .card .card-content {
@@ -420,6 +447,9 @@ body, button, input, select, textarea {
     }
     .navbar-dropdown .navbar-item:hover {
         background: rgba(0,0,0,.04)!important;
+    }
+    .kaki .action .button:first-child {
+        padding-left: 0;
     }
 }
 @media screen and (max-width: 1023px) {
