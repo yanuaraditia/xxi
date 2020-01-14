@@ -318,13 +318,17 @@ hr {
 }
 .front-banner .image-container img {
     z-index: 3;
-    transform: translateZ(50px);
+    --transform: translateZ(50px);
+    transform: var(--transform);
+    -webkit-transform: var(--transform);
 }
 .front-banner .image-container .hiasan-1 {
     position: absolute;
     bottom: 10%;
     right: 0;
-    transform: rotate(-45deg) translateX(30px) translateZ(50px);
+    --trans: rotate(-45deg) translateX(30px) translateZ(50px);
+    transform: var(--trans);
+    -webkit-transform: var(--trans);
 }
 .front-banner .image-container .hiasan-2 {
     position: absolute;
