@@ -424,7 +424,7 @@ hr {
     .navbar.header .navbar-item {
         font-weight:500;
     }
-    .navbar.header .navbar-item:hover, .navbar.header .navbar-item.has-dropdown:hover .navbar-link, .navbar.header .navbar-item.has-dropdown:focus .navbar-link, .navbar.header .navbar-item.has-dropdown:focus-within .navbar-link {
+    .navbar.header .navbar-item:hover,.navbar.header .navbar-item:focus, .navbar.header .navbar-item.has-dropdown:hover .navbar-link, .navbar.header .navbar-item.has-dropdown:focus .navbar-link, .navbar.header .navbar-item.has-dropdown:focus-within .navbar-link {
         color: var(--primary-light);
         background: transparent;
     }
