@@ -13,8 +13,15 @@ html,body {
     -ms-hyphens: manual;
     hyphens: manual;
 }
+b {
+    font-weight: 500;
+}
+del, s {
+    opacity: .5;
+}
 a {
     color: var(--primary-light);
+    transition: box-shadow .1s ease-in-out, color .2s ease-in-out;
 }
 ::-webkit-input-placeholder {
   color: pink;
@@ -82,10 +89,10 @@ hr {
 .container.is-read {
     max-width: 800px;
 }
-.container p a:hover {
+.container p a:hover, .list a:hover {
     color: var(--primary);
     outline-width: 0px;
-    box-shadow: var(--primary) 0px 1px 0px 0px;
+    box-shadow: var(--primary) 0px 2px 0px 0px;
 }
 .m3mk {
     position: relative;
@@ -284,6 +291,9 @@ hr {
 }
 .navbar.header ~ .section {
     padding-top: 7rem;
+}
+.navbar.header ~ .section ~ .section {
+    padding-top: 3rem;
 }
 .navbar.header .navbar-link:not(.is-arrowless)::after {
     display: none;
@@ -590,6 +600,17 @@ hr {
         padding: 20px 10px;
     }
     .front-banner .image-container .hiasan-1 {
+        display: none;
+    }
+    .cta {
+        background: linear-gradient(114.78deg, #3a3a3a -21.54%, #262626 151.2%);
+        text-align: center;
+    }
+    .cta .buttons {
+        display: block;
+        text-align: center;
+    }
+    .cta .image {
         display: none;
     }
 }
