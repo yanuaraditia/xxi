@@ -591,3 +591,10 @@ hr {
 .notes.read .card .tags {
     margin-top: 10px;
 }
+.app .columns:hover .image img {
+    filter: var(--blur) grayscale();
+    transition: all .2s ease-in-out;
+}
+.app .columns:hover .image:hover img {
+    filter: none;
+}
