@@ -481,6 +481,34 @@ hr {
     .navbar-menu:hover .navbar-item.is-active,.navbar-menu:hover .navbar-item:hover,.navbar-menu:hover .navbar-item.is-active:hover {
         filter:none;
     }
+    .cta .container {
+        background: linear-gradient(114.78deg, #3a3a3a -21.54%, #262626 151.2%);
+        padding: 3rem 2rem;
+        padding-left: 200px;
+        display: flex;
+    }
+    .cta .heroda {
+        float: right;
+    }
+    .cta .image {
+        max-width: 200px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .cta .image svg {
+        position: absolute;
+        bottom: 10%;
+        left: 30%;
+    }
+    .cta .title {
+        margin: 0;
+    }
+    .cta .buttons {
+        position: absolute;
+        right: 2rem;
+        top: calc(50% - 3rem / 2);
+    }
 }
 @media screen and (max-width: 1023px) {
     .title.is-1 {
