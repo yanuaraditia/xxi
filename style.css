@@ -23,6 +23,15 @@ a {
     color: var(--primary-light);
     transition: box-shadow .1s ease-in-out, color .2s ease-in-out;
 }
+.breadcrumb a {
+    color: var(--primary-light);
+}
+.breadcrumb li+li::before {
+    opacity: .5;
+}
+.breadcrumb li.is-active a {
+    color: #fff;
+}
 ::-webkit-input-placeholder {
   color: pink;
 }
@@ -34,6 +43,19 @@ a {
 }
 :-moz-placeholder {
   color: pink;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
 }
 strong {
     color: white;
@@ -172,6 +194,14 @@ hr {
 .title.is-head {
     max-width: 300px;
     margin: 3rem 0;
+}
+.title:not(:hover) .anchor {
+    display: none;
+}
+.title:hover .anchor {
+    left: -30px;
+    position: absolute;
+    width: 100%;
 }
 .subtitle {
     color: inherit;
