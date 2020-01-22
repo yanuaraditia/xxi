@@ -15,7 +15,7 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700|Roboto:400,400i,500,500i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="bulma.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -117,5 +117,13 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="main.js"></script>
+    <script>
+    UpUp.start({
+        'content-url': 'schedule.html?user=joe',
+        'assets': ['favicon.ico','style.css','me.webmanifest',
+        'index.html','about.html','work.html','resume.pdf'],
+        'service-worker-url': 'sw.js'
+    });
+    </script>
 </body>
 </html>
