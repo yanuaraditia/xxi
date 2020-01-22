@@ -648,32 +648,6 @@ hr {
         display: none;
     }
 }
-.notes:not(.read) .column a {
-    display: block;
-    border-bottom: 1px solid rgba(0,0,0,.05);
-}
-.notes:not(.read) .card .media-content {
-    transform:translateX(-50px);
-    transition:transform .15s ease-in-out;
-}
-.notes:not(.read) .card:hover .media-content {
-    transform:translateX(0);
-}
-.notes:not(.read) .card .media-left {
-    filter:var(--blur);
-}
-.notes:not(.read) .card:hover .media-left {
-    filter:none;
-}
-.notes.read .card {
-    margin-bottom: 20px;
-}
-.notes.read .card .title {
-    margin-bottom: 10px;
-}
-.notes.read .card .tags {
-    margin-top: 10px;
-}
 .app .columns:hover .image img {
     filter: var(--blur) grayscale();
     transition: all .2s ease-in-out;
