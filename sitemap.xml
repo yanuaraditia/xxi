@@ -1,18 +1,1 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://yanuaraditia.com/index.html</loc>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://yanuaraditia.com/work.html</loc>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://yanuaraditia.com/about.html</loc>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://yanuaraditia.com/resume.pdf</loc>
-        <priority>1.0</priority>
-    </url>
-</urlset>
+<urlsetxmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://yanuaraditia.com/index.html</loc><priority>1.0</priority></url><url><loc>https://yanuaraditia.com/work.html</loc><priority>1.0</priority></url><url><loc>https://yanuaraditia.com/about.html</loc><priority>1.0</priority></url><url><loc>https://yanuaraditia.com/resume.pdf</loc><priority>1.0</priority></url></urlset>
