@@ -51,5 +51,5 @@ const routes = [
     { path: '/about', component: About },
     { path: '/work', component: Work }
 ];
-const router = new VueRouter({ mode:'history',routes:routes })
+const router = new VueRouter({ routes:routes })
 const spa = new Vue({ router }).$mount('#main-wrapper');
